@@ -1570,6 +1570,7 @@ This is an ML-based estimate using your entered learning information.
 
 @app.route("/")
 def home():
+    return render_template("index.html")
 
     if "user_id" in session:
         return redirect("/dashboard")
