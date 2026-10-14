@@ -10,7 +10,7 @@ import sqlite3
 import numpy as np
 import pandas as pd
 
-from flask import Flask, request, redirect, session, jsonify, render_template_string
+from flask import Flask, request, redirect, session, jsonify, render_template_string, render_template
 from werkzeug.security import generate_password_hash, check_password_hash
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
